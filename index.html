@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+              <h2>Generate a Password</h2>
+            </div>
+        <div class="container">
+              <!-- specify the length of the password -->
+             <h3>Enter the length of the password?</h3> <input type="number" id="charNum" value="12" min="8" max="128" /><br />
+
+              <!-- Asks if the user intends to have numbers or symbols in the password -->
+             Number: <input type="checkbox" id="num"/>
+             Symbol: <input type="checkbox" id="sym"/><br />
+        </div>
+
+        <div class="card-body">
+            <textarea
+              readonly
+              id="yourPw"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+          <div class="card-footer">
+            <button id="generate" class="btn" >Generate Password</button>
+            
+          </div>
+  
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
